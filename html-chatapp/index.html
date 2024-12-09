@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Assistant</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="chat-icon" id="chat-icon">
+      <i class="fa fa-comments"></i>
+    </div>
+
+    <div class="chat-popup" id="chat-popup">
+      <div class="chat-header">
+        <span>Chat Assistant</span>
+        <button id="close-chat" class="close-btn">&times;</button>
+      </div>
+      <div class="chat-body" id="chat-body"></div>
+      <!-- <div class="loader"></div> -->
+      <div class="chat-input-container">
+        <input
+          type="text"
+          id="chat-input"
+          placeholder="Type your message..."
+          required
+        />
+        <button id="send-btn">Send</button>
+      </div>
+      <div
+        id="error-message"
+        style="
+          color: red;
+          font-size: 15px;
+          margin-top: 2px;
+          margin-bottom: 2px;
+          display: none;
+          margin-left: 20px;
+          text-align: left;
+        "
+      >
+        Please enter a message!
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

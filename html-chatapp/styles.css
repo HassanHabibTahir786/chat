@@ -1,0 +1,143 @@
+.chat-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #0084ff;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 24px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  z-index: 1001;
+}
+
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.chat-header {
+  background-color: #0084ff;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.chat-body {
+  padding: 15px;
+  overflow-y: auto;
+  max-height: 250px;
+  flex-grow: 1;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #f1f1f1;
+  display: inline-block;
+  max-width: 80%;
+  word-wrap: break-word;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.user-message {
+  background-color: #0084ff;
+  color: white;
+  align-self: flex-end;
+  text-align: right;
+}
+
+.bot-message {
+  background-color: #e0e0e0;
+  color: black;
+  align-self: flex-start;
+}
+.bot-message-loader {
+ 
+  color: black;
+  align-self: flex-start;
+  padding: 1rem 1.5rem;
+  
+}
+
+.chat-input-container {
+  padding: 10px;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #ccc;
+}
+
+#chat-input {
+  width: 80%;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+#send-btn {
+  padding: 8px 16px;
+  background-color: #0084ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#send-btn:hover {
+  background-color: #005bb5;
+}
+
+.loader {
+  width: 30px;
+  aspect-ratio: 5;
+  background: radial-gradient(circle closest-side, #000 80%, #0000) 0 /
+    calc(100% / 5) 100% space;
+  clip-path: inset(0 100% 0 0);
+  animation: l1 1s steps(8) infinite;
+  margin-left: "2px";
+}
+
+@keyframes l1 {
+  to {
+    clip-path: inset(0 -20% 0 0);
+  }
+}

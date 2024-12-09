@@ -1,0 +1,32 @@
+name = "dev-bot"
+main = "src/index.ts"
+compatibility_date = "2024-11-12"
+compatibility_flags = ["nodejs_compat"]
+
+# [env.production]
+# wrangler deploy --env production
+account_id = "" # Replace with your Cloudflare account ID
+workers_dev = true
+route = "" # Replace with your domain/route
+
+[[d1_databases]]
+binding = "DB"
+database_name = "db"
+database_id = "ccc3d7e6-5deb-438c-b719-4d72a6285370"
+
+[[kv_namespaces]]
+binding = "CONFIG"
+id = "b2d80439835b40079a4ab95b4219fdd4"
+
+[[kv_namespaces]]
+binding = "CACHE"
+id = "03361720afa44ed6a9bc2397e932af58"
+
+
+# Allows monitoring / analying worker
+[observability]
+enabled = true
+
+[vars]
+OPENAPI_API_KEY = "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"
+

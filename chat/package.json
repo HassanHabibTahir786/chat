@@ -1,0 +1,25 @@
+{
+  "name": "openai-hono-chatbot",
+  "version": "1.0.0",
+  "description": "OpenAI chatbot using Hono and Cloudflare Workers",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy --minify"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "file-upload": "^0.0.0",
+    "formidable": "^3.5.2",
+    "fs": "^0.0.1-security",
+    "hono": "^4.6.11",
+    "openai": "^4.73.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20241112.0",
+    "@types/formidable": "^3.4.5",
+    "@types/node": "^22.9.3",
+    "wrangler": "^3.88.0"
+  }
+}
